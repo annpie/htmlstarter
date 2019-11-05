@@ -1,0 +1,15 @@
+.header-background {
+  background: #2A2A27;
+}
+
+.logo {
+  color: #F8F3E6 !important;
+}
+
+.header-link {
+  color: #F8F3E6 !important;
+}
+
+.navigation {
+  justify-content: flex-end;
+}

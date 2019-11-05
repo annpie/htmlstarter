@@ -1,0 +1,171 @@
+:root {
+  --background: #2A2927;
+  --fontcolor: #F8F3E6;
+  --accentcolor: #D6AD8A;
+  --fontsize: 20px;
+  --fontbold: 700;
+  --lineheight: 1.6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.text {
+  font-size: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header {
+  background: var(--background);
+  height: 80px;
+
+}
+
+.logo {
+  color: var(--fontcolor);
+  font-size: 40px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--fontsize);
+  text-decoration: none;
+  font-size: var(--fontsize);
+  text-transform: uppercase;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.footer {
+  display: flex;
+  background: var(--background);
+  height: 80px;
+  color: var(--fontcolor);
+  font-size: var(--fontsize);
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background: var(--fontcolor);
+  padding: 80px 0;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-link {
+  color: var(--accentcolor);
+  font-weight: var(--fontbold);
+  margin: 20px 0;
+  display: block;
+  text-decoration: none;
+}
+
+.main-tags {
+  margin: 5px 0;
+}
+
+.main-tags span {
+  color: var(--accentcolor);
+  font-weight: var(--fontbold);
+}
+
+.content {
+  width: 50%;
+}
+
+.main-heading {
+  font-size: 50px;
+}
+
+.date {
+  margin: 20px 0;
+  color: gray;
+  font-weight: var(--fontbold);
+  text-transform: uppercase;
+}
+
+.text-container {
+  display: flex;
+  margin-top: 40px;
+}
+
+.main-text {
+  padding-left: 40px;
+  line-height: var(--lineheight);
+}
+
+.sidebar {
+  width: 30%;
+}
+
+.sidebar-heading {
+  margin-bottom: 20px;
+}
+
+.sidebar-text {
+  line-height: var(--lineheight);
+}
+
+.sidebar-text a {
+  color: var(--accentcolor);
+  font-weight: var(--fontbold);
+  text-decoration: none;
+}
+
+.main-container{
+  background: #fff;
+}
+
+/* breakpoints */
+/* mobile - do 480px / 640px
+tablet - do 768px / 1024px
+desktop - 768px+ 1024px+
+*/
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-heading {
+    font-size: 25px;
+  }
+}
